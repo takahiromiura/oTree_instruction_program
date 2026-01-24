@@ -1,0 +1,12 @@
+{{ block title }}
+    役割情報
+{{ endblock }}
+
+{{ block content }}
+{{ if player.role == C.DICTATOR_ROLE }}
+    <p>あなたの役割: 選択者</p>
+{{ else }}
+    <p>あなたの役割: 受取人</p>
+{{ endif }}
+    {{ next_button }}
+{{ endblock }}

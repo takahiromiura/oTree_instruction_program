@@ -1,0 +1,13 @@
+{{ block title }}
+    配分の選択
+{{ endblock }}
+
+{{ block content }}
+
+    <p>{{ C.INITIAL_ENDOWMENTS }} ドルのうち、いくら受取人に渡しますか？</p>
+    <p>0 から {{ C.INITIAL_ENDOWMENTS }} までの整数値を入力してください。</p>
+
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}
